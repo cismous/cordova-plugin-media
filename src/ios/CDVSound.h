@@ -109,6 +109,8 @@ typedef NSUInteger CDVMediaMsg;
 - (NSString*)createMediaErrorWithCode:(CDVMediaError)code message:(NSString*)message;
 
 - (void)startRecordingAudio:(CDVInvokedUrlCommand*)command;
+- (void)pauseRecordingAudio:(CDVInvokedUrlCommand*)command;
+- (void)resumeRecordingAudio:(CDVInvokedUrlCommand*)command;
 - (void)stopRecordingAudio:(CDVInvokedUrlCommand*)command;
 
 - (void)setVolume:(CDVInvokedUrlCommand*)command;
